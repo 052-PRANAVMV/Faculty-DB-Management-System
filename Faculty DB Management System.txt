@@ -1,0 +1,366 @@
+Faculty Database Management System (FDMS)
+
+Objective:
+Develop a web-based Faculty Database Management System using the MERN stack (MongoDB, Express.js, React, Node.js) to manage and maintain information related to faculty members in a university. This system will help in storing, updating, and retrieving faculty information efficiently.
+
+Scope:
+The system should be capable of maintaining the following information:
+1. Faculty Profile: Personal details, educational background, contact information, and photographs.
+2. Subjects Handled: Details of subjects taught, pass percentage of each subject.
+3. Publications: List of research papers, journals, conference papers, etc.
+4. Certifications: Details of professional certifications obtained.
+5. Awards: Honors and awards received.
+6. Projects Handled: Internal and external projects undertaken by the faculty.
+7. Funded Project Proposals: Proposals submitted and status (approved/rejected).
+8. Patents: Patents filed and granted.
+9. Books: Books authored or co-authored by the faculty.
+
+Functional Requirements:
+1. User Authentication:
+   - Login/Logout for faculty and admin.
+   - Role-based access control (Admin and Faculty roles).
+2. Faculty Profile Management:
+   - Add, edit, delete, and view faculty profiles.
+   - Upload faculty photographs.
+3. Subject Handling:
+   - Record subjects taught by faculty.
+   - Track pass percentages for each subject.
+4. Publications Management:
+   - Add, edit, delete, and view publications.
+5. Certifications Management:
+   - Add, edit, delete, and view certifications.
+6. Awards Management:
+   - Add, edit, delete, and view awards.
+7. Projects Management:
+   - Add, edit, delete, and view projects handled.
+8. Funded Project Proposals:
+   - Add, edit, delete, and view funded project proposals.
+9. Patents Management:
+   - Add, edit, delete, and view patents.
+10. Books Management:
+   - Add, edit, delete, and view books.
+11. Search and Filter:
+   - Search and filter faculty information based on various criteria.
+12. Responsive Design:
+   - Ensure the application is responsive and works well on different devices (desktops, tablets, and smartphones).
+
+    Page Descriptions and Components
+
+     1. Home Page
+- Description: Entry point of the application, featuring a login form for users.
+- Features:
+  - Welcome message.
+  - Login form with fields for email and password.
+  - Submit button for logging in.
+  - Link to reset password.
+- Components:
+  - LoginForm
+  - WelcomeMessage
+  - Footer
+- How it looks:
+  - Simple, clean design with a centered login form.
+  - The welcome message at the top.
+  - A footer with additional links (like "Forgot Password").
+- Navigation:
+  - After successful login, redirect to DashboardPage.
+
+     2. Dashboard Page
+- Description: The main hub for users after logging in, displaying role-based content.
+- Features:
+  - Personalized greeting.
+  - Quick access links to various management pages.
+  - Overview of recent activities (publications, projects, etc.).
+- Components:
+  - UserGreeting
+  - QuickLinks
+  - RecentActivities
+- How it looks:
+  - Personalized greeting at the top.
+  - Icons or cards for quick access to different sections.
+  - Recent activities displayed in a list or grid.
+- Navigation:
+  - Links to ProfilePage, TeachingPage, ResearchPage, AwardsPage, ProjectsPage, etc.
+
+     3. Profile Page
+- Description: Allows faculty to view and edit their profile information.
+- Features:
+  - View and update personal details.
+  - Upload and change profile picture.
+  - View and edit educational background.
+  - View and edit professional information.
+- Components:
+  - PersonalInfoForm
+  - ProfilePictureUpload
+  - AcademicBackgroundForm
+  - ProfessionalInfoForm
+- How it looks:
+  - A form layout with sections for different types of information.
+  - An upload button for the profile picture.
+- Navigation:
+  - Accessible from the dashboard or other management pages.
+
+     4. Teaching Page
+- Description: Manages subjects taught by faculty and tracks pass percentages.
+- Features:
+  - Add, edit, and delete subjects.
+  - View and update pass percentages.
+  - Upload teaching materials.
+- Components:
+  - SubjectList
+  - ClassSchedule
+  - CourseMaterialUpload
+- How it looks:
+  - A list of subjects with buttons to edit or delete.
+  - Form to add new subjects.
+  - Upload section for teaching materials.
+- Navigation:
+  - Accessible from the dashboard.
+
+     5. Research Page
+- Description: Manages research projects and publications.
+- Features:
+  - Add, edit, delete, and view research projects.
+  - Add, edit, delete, and view publications.
+  - Manage research collaborations.
+- Components:
+  - ResearchProjectList
+  - PublicationList
+  - CollaborationList
+- How it looks:
+  - Tabs or sections for projects, publications, and collaborations.
+  - Lists with action buttons for each item.
+- Navigation:
+  - Accessible from the dashboard.
+
+     6. Awards Page
+- Description: Manages faculty certifications and awards.
+- Features:
+  - Add, edit, delete, and view certifications.
+  - Add, edit, delete, and view awards.
+- Components:
+  - CertificationUpload
+  - AwardList
+- How it looks:
+  - Forms and lists for managing awards and certifications.
+- Navigation:
+  - Accessible from the dashboard.
+
+   
+  7. Projects Page
+- Description: Manages internal and external projects handled by faculty.
+- Features:
+  - Add, edit, delete, and view projects.
+- Components:
+  - ProjectList
+  - ProjectDetailsForm
+- How it looks:
+  - A table or list of projects with action buttons.
+  - A form for project details.
+- Navigation:
+  - Accessible from the dashboard.
+
+     8. Funded Projects Page
+- Description: Manages funded project proposals.
+- Features:
+  - Add, edit, delete, and view funded project proposals.
+  - Track proposal status (approved/rejected).
+- Components:
+  - FundedProjectProposalList
+  - ProposalStatusTracker
+- How it looks:
+  - A list of proposals with status indicators.
+  - Forms for managing proposals.
+- Navigation:
+  - Accessible from the dashboard.
+
+     9. Patents Page
+- Description: Manages patents filed and granted.
+- Features:
+  - Add, edit, delete, and view patents.
+- Components:
+  - PatentList
+  - PatentDetailsForm
+- How it looks:
+  - A table or list of patents.
+  - A form for patent details.
+- Navigation:
+  - Accessible from the dashboard.
+
+ 10. Books Page
+- Description: Manages books authored or co-authored by faculty.
+- Features:
+  - Add, edit, delete, and view books.
+- Components:
+  - BookList
+  - BookDetailsForm
+- How it looks:
+  - A table or list of books.
+  - A form for book details.
+- Navigation:
+  - Accessible from the dashboard.
+
+     11. Admin Page
+- Description: Centralized management for admin users.
+- Features:
+  - Manage user accounts (add, edit, delete).
+  - Generate reports and analytics.
+  - Configure system settings.
+- Components:
+  - UserManagement
+  - ReportGenerator
+  - SystemSettings
+- How it looks:
+  - Admin-specific tools and options.
+  - Detailed reports and settings forms.
+- Navigation:
+  - Accessible only to admin users from the dashboard.
+
+    Example Project Structure
+Front end
+
+faculty-management-client/
+│
+├── public/                 # Public assets
+│   ├── index.html          # Main HTML file
+│   ├── favicon.ico         # Favicon
+│   └── ...                 # Other static assets
+│
+├── src/                    # Source files
+│   ├── assets/             # Images, fonts, etc.
+│   │   └── ...
+│   ├── components/         # Reusable components
+│   │   ├── Auth/
+│   │   │   ├── LoginForm.js
+│   │   │   └── ...
+│   │   ├── Dashboard/
+│   │   │   ├── UserGreeting.js
+│   │   │   ├── QuickLinks.js
+│   │   │   ├── RecentActivities.js
+│   │   │   └── ...
+│   │   ├── Profile/
+│   │   │   ├── PersonalInfoForm.js
+│   │   │   ├── ProfilePictureUpload.js
+│   │   │   ├── AcademicBackgroundForm.js
+│   │   │   ├── ProfessionalInfoForm.js
+│   │   │   └── ...
+│   │   ├── Teaching/
+│   │   │   ├── SubjectList.js
+│   │   │   ├── ClassSchedule.js
+│   │   │   ├── CourseMaterialUpload.js
+│   │   │   └── ...
+│   │   ├── Research/
+│   │   │   ├── ResearchProjectList.js
+│   │   │   ├── PublicationList.js
+│   │   │   ├── CollaborationList.js
+│   │   │   └── ...
+│   │   ├── Awards/
+│   │   │   ├── CertificationUpload.js
+│   │   │   ├── AwardList.js
+│   │   │   └── ...
+│   │   ├── Projects/
+│   │   │   ├── ProjectList.js
+│   │   │   ├── ProjectDetailsForm.js
+│   │   │   └── ...
+│   │   ├── FundedProjects/
+│   │   │   ├── FundedProjectProposalList.js
+│   │   │   ├── ProposalStatusTracker.js
+│   │   │   └── ...
+│   │   ├── Patents/
+│   │   │   ├── PatentList.js
+│   │   │   ├── PatentDetailsForm.js
+│   │   │   └── ...
+│   │   ├── Books/
+│   │   │   ├── BookList.js
+│   │   │   ├── BookDetailsForm.js
+│   │   │   └── ...
+│   │   ├── Admin/
+│   │   │   ├── UserManagement.js
+│   │   │   ├── ReportGenerator.js
+│   │   │   ├── SystemSettings.js
+│   │   │   └── ...
+│   │   └── ...              # Other components
+│   │
+│   ├── pages/               # Page components
+│   │   ├── LoginPage.js
+│   │   ├── DashboardPage.js
+│   │   ├── ProfilePage.js
+│   │   ├── TeachingPage.js
+│   │   ├── ResearchPage.js
+│   │   ├── AwardsPage.js
+│   │   ├── ProjectsPage.js
+│   │   ├── FundedProjectsPage.js
+│   │   ├── PatentsPage.js
+│   │   ├── BooksPage.js
+│   │   ├── AdminPage.js
+│   │   └── ...              # Other pages
+│   │
+│   ├── App.js               # Main app component
+│   ├── index.js             # Entry point for React
+│   ├── routes.js            # Routes configuration
+│   ├── styles/              # Stylesheets
+│   │   └── ...
+│   ├── utils/               # Utility functions
+│   │   └── ...
+│   └── ...                  # Other source files
+│
+└── package.json             # Frontend package configuration
+
+Backend
+faculty-management-server/
+│
+├── config/                 # Configuration files
+│   ├── db.js               # Database connection setup
+│   └── ...                 # Other configurations
+│
+├── controllers/            # Controllers for handling requests
+│   ├── authController.js
+│   ├── userController.js
+│   ├── facultyController.js
+│   ├── researchController.js
+│   ├── publicationController.js
+│   ├── certificationController.js
+│   ├── awardController.js
+│   ├── projectController.js
+│   ├── fundedProjectController.js
+│   ├── patentController.js
+│   ├── bookController.js
+│   └── ...                 # Other controllers
+│
+├── middleware/             # Middleware functions
+│   ├── auth.js             # Authentication middleware
+│   └── ...                 # Other middleware
+│
+├── models/                 # Mongoose models
+│   ├── User.js
+│   ├── Faculty.js
+│   ├── Research.js
+│   ├── Publication.js
+│   ├── Certification.js
+│   ├── Award.js
+│   ├── Project.js
+│   ├── FundedProject.js
+│   ├── Patent.js
+│   ├── Book.js
+│   └── ...                 # Other models
+│
+├── routes/                 # Express routes
+│   ├── auth.js
+│   ├── users.js
+│   ├── faculties.js
+│   ├── research.js
+│   ├── publications.js
+│   ├── certifications.js
+│   ├── awards.js
+│   ├── projects.js
+│   ├── fundedProjects.js
+│   ├── patents.js
+│   ├── books.js
+│   └── ...                 # Other routes
+│
+├── utils/                  # Utility functions
+│   └── ...                 # Utility files
+│
+├── .env                    # Environment variables
+├── server.js               # Express server setup
+├── package.json            # Backend package configuration
+└── ...                     # Other files
